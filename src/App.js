@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-const API_KEY = "3b5b2c5a5d90ef09d98c467547d79f52";
+
 const region = "Seoul";
 export default class App extends Component {
   state = {
@@ -40,7 +40,7 @@ export default class App extends Component {
   }
   getWeather = async () => {
     const { data, error } = await axios.get(
-      "http://192.168.35.91:8080/get-weather"
+      "http://103.244.111.87:8080/get-weather"
     );
 
     if (error) {
