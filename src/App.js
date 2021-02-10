@@ -39,9 +39,7 @@ export default class App extends Component {
     this.getWeather();
   }
   getWeather = async () => {
-    const { data, error } = await axios.get(
-      "http://172.16.11.7:8080/get-weather"
-    );
+    const { data, error } = await axios.get("/get-weather");
 
     if (error) {
       console.log(error);
